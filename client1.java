@@ -9,7 +9,7 @@ public class client1 {
 
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		System.out.println("Client started....");
-		Socket socket=new Socket("127.0.01",2222);
+		Socket socket=new Socket("127.0.0.1",2222);
 		System.out.println("Client connected");
 		ObjectOutputStream oos=new ObjectOutputStream(socket.getOutputStream());
 		ObjectInputStream ois=new ObjectInputStream(socket.getInputStream());
